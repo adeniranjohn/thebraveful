@@ -1,12 +1,12 @@
 var express = require('express');
-var index = express.Router();
+var admin = express.Router();
 
 /* GET home page. */
-index.get('/', (req, res) => {
+admin.get('/', (req, res) => {
   res.status(200).json({
      "title": 'The Braveful',
-     "page": "Home Page"
+     "page": "Admin Page"
      });
 });
 
-module.exports = index;
+module.exports = admin;
